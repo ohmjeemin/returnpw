@@ -8,4 +8,5 @@ class RememberPwApplication
 
 fun main(args: Array<String>) {
     runApplication<RememberPwApplication>(*args)
+
 }
