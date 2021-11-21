@@ -6,10 +6,9 @@ import org.springframework.web.bind.annotation.GetMapping
 
 @Controller
 class ApiCtlMemberLogout {
-
-    @GetMapping("/test")
+    @GetMapping("/")
     fun action(model: Model):String {
-        model.get("title") = "testTitle"
+        model.addAttribute("greeting", "Hello")
         return "home"
     }
 
