@@ -5,11 +5,11 @@ import org.springframework.ui.Model
 import org.springframework.web.bind.annotation.GetMapping
 
 @Controller
-class ApiCtlMemberLogout {
-    @GetMapping("/gg")
+class ApiCtlMemberLogin {
+    @GetMapping("/login")
     fun action(model: Model):String {
         model.addAttribute("greeting", "Hello")
-        return "home"
+        return "login"
     }
 
 }
