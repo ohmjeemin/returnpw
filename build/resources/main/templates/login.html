@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="utf-8" />
+        <title>Welcome!</title>
+    </head>
+    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+    <script type="text/javascript">
+        window.Kakao.init("eee833402e392a975d0b1ef877dc7ab4")
+        function loginWithKakao() {
+            console.log("엥에에")
+            Kakao.Auth.login({
+                success: function(authObj) {
+                    alert(JSON.stringify(authObj))
+                },
+                fail: function(err) {
+                    alert(JSON.stringify(err))
+                },
+            })
+        }
+    </script>
+    <body>
+    <a id="custom-login-btn" href="javascript:loginWithKakao()">
+        <img
+                src="//k.kakaocdn.net/14/dn/btqCn0WEmI3/nijroPfbpCa4at5EIsjyf0/o.jpg"
+                width="222"
+        />
+    </a>
+
+
+    </body>
+</html>
+
+
+
